@@ -54,7 +54,7 @@ const nonces = new Map<string, { nonce: string; exp: number }>();
 
 /** Words a byline may not contain: impersonation of staff, and the obvious abuse. */
 const BANNED = [
-  "admin", "official", "hangon", "hang on", "bank", "support", "moderator", "team", "staff", "dev", "owner", "pons", "airdrop", "claim", "giveaway",
+  "admin", "official", "nightmoth", "night moth", "bank", "support", "moderator", "team", "staff", "dev", "owner", "pons", "airdrop", "claim", "giveaway",
   "fuck", "shit", "cunt", "nigg", "fag", "rape", "nazi", "hitler", "porn", "whore", "bitch", "retard",
 ];
 
@@ -90,7 +90,7 @@ export function clearX(addr: string) {
 /** The text a wallet signs to link or unlink X. */
 export function xMessage(addr: string, action: "link" | "unlink", nonce: string) {
   return [
-    `Hang On: ${action} my X account`,
+    `Night Moth: ${action} my X account`,
     `Wallet: ${ethers.getAddress(addr)}`,
     `Nonce: ${nonce}`,
     "This signature is free and moves no funds.",
@@ -104,10 +104,10 @@ function validMugshot(pp: unknown): pp is number[] {
 /** The exact text the wallet signs. The server rebuilds it, so the client cannot change a word. */
 export function bylineMessage(addr: string, name: string, pp: string, nonce: string) {
   return [
-    "Hang On: set my name and sloth",
+    "Night Moth: set my name and moth",
     `Wallet: ${ethers.getAddress(addr)}`,
     `Nickname: ${name}`,
-    `Sloth: ${pp}`,
+    `Moth: ${pp}`,
     `Nonce: ${nonce}`,
     "This signature is free and moves no funds.",
   ].join("\n");
@@ -168,7 +168,7 @@ export function claimByline(input: { addr?: unknown; name?: unknown; pp?: unknow
   const bad = spendNonce(addr, input.nonce, input.signature, (n) => bylineMessage(addr, name, pp.join("-"), n));
   if (bad) return { error: bad };
   const now = Math.floor(Date.now() / 1000);
-  if (!isHolder(addr)) return { error: "Only wallets holding $HANG can claim a name." };
+  if (!isHolder(addr)) return { error: "Only wallets holding $MOTH can claim a name." };
   const prev = book[addr];
   if (prev?.x) return { error: "This wallet shows its X account. Unlink X first to use a nickname." };
   const changed = !prev || prev.name !== name || (prev.pp ?? []).join("-") !== pp.join("-");

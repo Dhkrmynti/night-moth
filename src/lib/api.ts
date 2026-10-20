@@ -10,7 +10,7 @@ export interface Status {
   curveAddress: string;
   treasuryAddress: string;
   escrowETH: string;
-  /** Display-only prices: USD per $HANG and per ETH (0 when unknown). */
+  /** Display-only prices: USD per $MOTH and per ETH (0 when unknown). */
   price?: { tokenUSD: number; ethUSD: number; source: string; at: number };
   cycle: { index: number; kind: RoundKind; thresholdETH: string; steps: { kind: RoundKind; thresholdETH: string }[] };
   rules: { minBalance: string; minHoldHours: number; topN: number; tiers?: Tier[] };
@@ -121,7 +121,7 @@ export interface RoundRow {
 
 /** The cycle, in plain names. */
 export const STEP: Record<RoundKind, { name: string; does: string }> = {
-  feeding: { name: "Reward", does: "ETH to the ten on the branches" },
+  feeding: { name: "Reward", does: "ETH to the ten on the sheet" },
   keeper: { name: "Treasury", does: "to the treasury wallet" },
 };
 
@@ -428,7 +428,7 @@ const seedPond = (): { total: number; topN: number; rows: PondRow[] } => {
       firstIn: now() - days[i] * 86400 - 3600 * i,
       padDays: days[i],
       received: String(rec[i]),
-      nickname: ["slowpoke", "", "three toes", "", "", "mossback", "", "", "", "", "", ""][i] || "",
+      nickname: ["lampwatcher", "", "dusty", "", "", "old luna", "", "", "", "", "", ""][i] || "",
       pp: [[1, 4, 3, 3], null, [2, 0, 2, 4], null, null, [4, 2, 4, 5], null, null, null, null, null, null][i] ?? null,
       x: null,
     })),

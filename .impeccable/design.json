@@ -1,0 +1,575 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-20T05:22:26.878Z",
+  "title": "Design System: Night Moth",
+  "extensions": {
+    "colorMeta": {
+      "night": {
+        "role": "neutral",
+        "displayName": "Night",
+        "canonical": "oklch(13.4% 0.010 260)",
+        "tonalRamp": [
+          "#0a0b0e",
+          "#212429",
+          "#3d4045",
+          "#5a5e63",
+          "#7d8086",
+          "#a1a5ab",
+          "#c7cbd1",
+          "#eceff3"
+        ]
+      },
+      "night-2": {
+        "role": "neutral",
+        "displayName": "Deeper Night",
+        "canonical": "oklch(15.5% 0.016 266)",
+        "tonalRamp": [
+          "#090b0f",
+          "#20242c",
+          "#3c4048",
+          "#595e67",
+          "#7c808a",
+          "#a0a5af",
+          "#c6cad5",
+          "#ebeef5"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Grass",
+        "canonical": "oklch(17.7% 0.015 162)",
+        "tonalRamp": [
+          "#080c0a",
+          "#1e2622",
+          "#39423d",
+          "#57605b",
+          "#79837e",
+          "#9da8a2",
+          "#c2cec8",
+          "#e9f0ed"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(25.7% 0.026 268)",
+        "tonalRamp": [
+          "#080b12",
+          "#1f2431",
+          "#3a3f4e",
+          "#575d6d",
+          "#7a8090",
+          "#9ea4b5",
+          "#c3cadc",
+          "#eaeef9"
+        ]
+      },
+      "line-2": {
+        "role": "neutral",
+        "displayName": "Hairline Strong",
+        "canonical": "oklch(31.8% 0.030 268)",
+        "tonalRamp": [
+          "#080b13",
+          "#1e2433",
+          "#393f50",
+          "#565d6f",
+          "#798093",
+          "#9da4b8",
+          "#c2cadf",
+          "#e9eefb"
+        ]
+      },
+      "moon": {
+        "role": "neutral",
+        "displayName": "Moonlight",
+        "canonical": "oklch(94.1% 0.010 273)",
+        "tonalRamp": [
+          "#0a0b0e",
+          "#222429",
+          "#3e3f45",
+          "#5c5d63",
+          "#7e8086",
+          "#a2a4ab",
+          "#c8cad1",
+          "#edeef2"
+        ]
+      },
+      "dim": {
+        "role": "neutral",
+        "displayName": "Dusk Grey",
+        "canonical": "oklch(71.2% 0.026 267)",
+        "tonalRamp": [
+          "#080b12",
+          "#1e2431",
+          "#3a3f4e",
+          "#575d6d",
+          "#798090",
+          "#9da4b5",
+          "#c3cadc",
+          "#eaeef9"
+        ]
+      },
+      "sheet": {
+        "role": "neutral",
+        "displayName": "Mercury Sheet",
+        "canonical": "oklch(93.8% 0.011 274)",
+        "tonalRamp": [
+          "#0a0b0e",
+          "#222429",
+          "#3e3f46",
+          "#5c5d64",
+          "#7e8087",
+          "#a2a4ac",
+          "#c8cad2",
+          "#edeef3"
+        ]
+      },
+      "sheet-2": {
+        "role": "neutral",
+        "displayName": "Sheet Shade",
+        "canonical": "oklch(89.5% 0.015 273)",
+        "tonalRamp": [
+          "#0a0b0f",
+          "#22242c",
+          "#3d3f48",
+          "#5b5d67",
+          "#7d808a",
+          "#a1a4af",
+          "#c7cad5",
+          "#eceef5"
+        ]
+      },
+      "sheet-ink": {
+        "role": "neutral",
+        "displayName": "Sheet Ink",
+        "canonical": "oklch(20.5% 0.012 270)",
+        "tonalRamp": [
+          "#0a0b0e",
+          "#22242a",
+          "#3d4046",
+          "#5b5d65",
+          "#7d8088",
+          "#a1a4ad",
+          "#c7cad3",
+          "#eceef4"
+        ]
+      },
+      "sheet-mute": {
+        "role": "neutral",
+        "displayName": "Sheet Mute",
+        "canonical": "oklch(43.3% 0.027 271)",
+        "tonalRamp": [
+          "#090b12",
+          "#1f2331",
+          "#3a3f4e",
+          "#585d6d",
+          "#7a8091",
+          "#9ea4b6",
+          "#c4cadd",
+          "#eaeefa"
+        ]
+      },
+      "lamp": {
+        "role": "primary",
+        "displayName": "Mercury Lamp Violet",
+        "canonical": "oklch(61.2% 0.229 291)",
+        "tonalRamp": [
+          "#0e002a",
+          "#2a0460",
+          "#48109b",
+          "#672cd1",
+          "#8858fb",
+          "#a791fb",
+          "#cac1fe",
+          "#eeecfe"
+        ]
+      },
+      "lamp-deep": {
+        "role": "primary",
+        "displayName": "Deep Lamp Violet",
+        "canonical": "oklch(55.2% 0.245 287)",
+        "tonalRamp": [
+          "#0c012b",
+          "#270065",
+          "#4406a3",
+          "#6226dc",
+          "#805cfc",
+          "#a194fc",
+          "#c7c3fe",
+          "#edecfe"
+        ]
+      },
+      "lamp-hover": {
+        "role": "primary",
+        "displayName": "Lamp Hover",
+        "canonical": "oklch(59.7% 0.235 288)",
+        "tonalRamp": [
+          "#0d002c",
+          "#280362",
+          "#450e9f",
+          "#632bd6",
+          "#825ef6",
+          "#a392ff",
+          "#c8c3fc",
+          "#edecff"
+        ]
+      },
+      "lamp-hi": {
+        "role": "primary",
+        "displayName": "Lamp Halo",
+        "canonical": "oklch(71.1% 0.166 292)",
+        "tonalRamp": [
+          "#0f002a",
+          "#2b0360",
+          "#47208d",
+          "#6344b1",
+          "#8568d9",
+          "#a890fb",
+          "#cbc1fe",
+          "#eeecfe"
+        ]
+      },
+      "lamp-white": {
+        "role": "primary",
+        "displayName": "Bulb White",
+        "canonical": "oklch(96.5% 0.019 295)",
+        "tonalRamp": [
+          "#0b0a0f",
+          "#25222c",
+          "#403e49",
+          "#5e5c67",
+          "#817e8b",
+          "#a5a2af",
+          "#cbc8d6",
+          "#efedf5"
+        ]
+      },
+      "pollen": {
+        "role": "secondary",
+        "displayName": "Pollen",
+        "canonical": "oklch(84.6% 0.147 89)",
+        "tonalRamp": [
+          "#100a00",
+          "#2e2203",
+          "#503d00",
+          "#735a04",
+          "#9c7c1a",
+          "#c99e02",
+          "#f1c547",
+          "#feedc3"
+        ]
+      },
+      "pollen-ink": {
+        "role": "secondary",
+        "displayName": "Pollen Ink",
+        "canonical": "oklch(46.4% 0.099 73)",
+        "tonalRamp": [
+          "#130900",
+          "#341f00",
+          "#583803",
+          "#7f5308",
+          "#a47636",
+          "#ca9b5b",
+          "#f2c181",
+          "#feebd5"
+        ]
+      },
+      "ember": {
+        "role": "tertiary",
+        "displayName": "Ember",
+        "canonical": "oklch(70.6% 0.188 32)",
+        "tonalRamp": [
+          "#1e0100",
+          "#480800",
+          "#771502",
+          "#a92407",
+          "#d9472b",
+          "#fe755a",
+          "#ffb6a6",
+          "#ffe9e4"
+        ]
+      },
+      "ember-ink": {
+        "role": "tertiary",
+        "displayName": "Ember Ink",
+        "canonical": "oklch(52.1% 0.175 32)",
+        "tonalRamp": [
+          "#1e0100",
+          "#480700",
+          "#771402",
+          "#aa2207",
+          "#d44d35",
+          "#fe745a",
+          "#fbb7a9",
+          "#fee9e5"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The hero line only."
+      },
+      "rule": {
+        "displayName": "Rule",
+        "purpose": "The rules section's big statements and the close line."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section heads; No. 1's name and the record name in the same cut, smaller."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Ring heads, step names, desk heads."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text; decks at 18px, max 56ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Mono callouts, charge scale, timestamps, transaction links, stamps."
+      },
+      "number": {
+        "displayName": "Number",
+        "purpose": "Every rank, balance and ETH figure, tabular."
+      }
+    },
+    "shadows": [
+      {
+        "name": "hanging-sheet",
+        "value": "0 40px 90px rgba(0, 0, 0, 0.55)",
+        "purpose": "The hero sheet hanging in the dark."
+      },
+      {
+        "name": "record-card",
+        "value": "0 30px 80px rgba(0, 0, 0, 0.45)",
+        "purpose": "A wallet's record on the night."
+      },
+      {
+        "name": "moth-inner",
+        "value": "drop-shadow(0 7px 6px rgba(21, 23, 29, 0.28)) brightness(0.94)",
+        "purpose": "Filter for moths near the lamp."
+      },
+      {
+        "name": "moth-outer",
+        "value": "drop-shadow(0 6px 5px rgba(21, 23, 29, 0.24)) brightness(0.82) saturate(0.85)",
+        "purpose": "Filter for moths farther from the lamp."
+      },
+      {
+        "name": "hairline-outline",
+        "value": "inset 0 0 0 1.5px var(--line-2)",
+        "purpose": "Outline pills; Moonlight on hover."
+      },
+      {
+        "name": "lamp-glow",
+        "value": "radial-gradient(circle, rgba(255,255,255,0.95) 0, rgba(244,241,255,0.6) 4%, rgba(166,139,255,0.28) 12%, rgba(139,92,255,0.1) 30%, transparent 60%)",
+        "purpose": "The lamp's light, screen-blended; the only glow in the system."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-arrive",
+        "value": "expo.out",
+        "purpose": "Arrivals: lamp glow, flutter-in, copy, flash fade, plate develop."
+      },
+      {
+        "name": "ease-travel",
+        "value": "power2.inOut",
+        "purpose": "FLIP crawl to a new rank (1.8s)."
+      },
+      {
+        "name": "ease-hover",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Moth scale 1.08 on hover/focus (0.35s)."
+      },
+      {
+        "name": "lamp-on",
+        "value": "glow 1.1s expo.out + bulb flicker 0.18s x3 steps(1)",
+        "purpose": "Load: the lamp comes on, then the sheet's light, then the words."
+      },
+      {
+        "name": "flutter-in",
+        "value": "1.3s expo.out, stagger 0.06",
+        "purpose": "Moths arrive from the dark and settle."
+      },
+      {
+        "name": "wing-twitch",
+        "value": "9s cycle, scaleX keyframes",
+        "purpose": "Resting moths twitch their wings."
+      },
+      {
+        "name": "flyoff",
+        "value": "1.8s cubic-bezier(0.5, 0, 0.75, 0)",
+        "purpose": "A seller's moth flies off on a wobbling path."
+      },
+      {
+        "name": "walk-up",
+        "value": "pinned scrub 0.6 over +120%",
+        "purpose": "The sheet scales to fill the screen and becomes the tally ground (wide screens only)."
+      },
+      {
+        "name": "orbit-flyer",
+        "value": "scrub 0.8",
+        "purpose": "A flyer travels the lamp section's loop with scroll."
+      },
+      {
+        "name": "rules-lit",
+        "value": "scrub 0.4, blur 3px to 0",
+        "purpose": "Rules come out of the dark on scroll."
+      },
+      {
+        "name": "camera-flash",
+        "value": "white difference layer, opacity 1 to 0 in 0.45s expo.out",
+        "purpose": "Inversion as the record section comes up."
+      },
+      {
+        "name": "log-spine",
+        "value": "scrub 0.5",
+        "purpose": "The night-log spine draws with scroll."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "All of the above off; smooth scroll off."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "nav-hide",
+        "value": "1080px"
+      },
+      {
+        "name": "single-column",
+        "value": "900px"
+      },
+      {
+        "name": "phone",
+        "value": "640px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one violet action: Buy $MOTH.",
+      "html": "<button class=\"ds-btn-primary\">Buy $MOTH</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 22px;border:0;border-radius:999px;background:var(--lamp-deep,#7444f5);color:#fff;font:620 16px/1 'Bricolage Grotesque Variable','Segoe UI',system-ui,sans-serif;cursor:pointer;transition:background-color .2s ease,transform .15s ease}.ds-btn-primary:hover{background:var(--lamp-hover,#8257ff)}.ds-btn-primary:active{transform:scale(.98)}.ds-btn-primary:focus-visible{outline:2px solid var(--lamp-hi,#a68bff);outline-offset:3px}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Secondary action on night: a hairline pill.",
+      "html": "<button class=\"ds-btn-line\">Find your moth</button>",
+      "css": ".ds-btn-line{display:inline-flex;align-items:center;height:48px;padding:0 22px;border:0;border-radius:999px;background:none;color:var(--moon,#e9ebf2);box-shadow:inset 0 0 0 1.5px var(--line-2,#2c3242);font:620 16px/1 'Bricolage Grotesque Variable','Segoe UI',system-ui,sans-serif;cursor:pointer;transition:box-shadow .2s ease}.ds-btn-line:hover{box-shadow:inset 0 0 0 1.5px var(--moon,#e9ebf2)}.ds-btn-line:focus-visible{outline:2px solid var(--lamp-hi,#a68bff);outline-offset:3px}"
+    },
+    {
+      "name": "Wallet Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Address lookup: mono text in a pill on night.",
+      "html": "<input class=\"ds-input\" placeholder=\"0x... wallet address\">",
+      "css": ".ds-input{height:48px;width:320px;padding:0 20px;border:1.5px solid var(--line-2,#2c3242);border-radius:999px;background:#0d1119;color:var(--moon,#e9ebf2);caret-color:var(--lamp-hi,#a68bff);font:400 15px 'Fragment Mono',ui-monospace,monospace}.ds-input::placeholder{color:#7c8396}.ds-input:focus{border-color:var(--lamp-hi,#a68bff);outline:none}"
+    },
+    {
+      "name": "Header Nav",
+      "kind": "nav",
+      "refersTo": "header",
+      "description": "Fixed 64px night bar with condensed wordmark, dim links and pills.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-nav__word\">Night Moth</span><a href=\"#\" class=\"is-on\">The sheet</a><a href=\"#\">The lamp</a><a href=\"#\">Night log</a><button class=\"ds-nav__connect\">Connect</button></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:28px;height:64px;padding:0 24px;background:var(--night,#06080c);border-bottom:1px solid var(--line,#1e2330);font-family:'Bricolage Grotesque Variable','Segoe UI',system-ui,sans-serif}.ds-nav__word{font-weight:760;font-size:20px;font-stretch:84%;letter-spacing:-.02em;color:var(--moon,#e9ebf2);margin-right:auto}.ds-nav a{color:var(--dim,#9ba2b3);font-size:15px;text-decoration:none;transition:color .2s ease}.ds-nav a:hover,.ds-nav a.is-on{color:var(--moon,#e9ebf2)}.ds-nav a.is-on{text-decoration:underline;text-decoration-color:var(--dim,#9ba2b3);text-underline-offset:8px}.ds-nav a:focus-visible,.ds-nav__connect:focus-visible{outline:2px solid var(--lamp-hi,#a68bff);outline-offset:3px}.ds-nav__connect{height:40px;padding:0 16px;border:0;border-radius:999px;background:none;color:var(--moon,#e9ebf2);box-shadow:inset 0 0 0 1.5px var(--line-2,#2c3242);font:inherit;font-size:14px;cursor:pointer}.ds-nav__connect:hover{box-shadow:inset 0 0 0 1.5px var(--moon,#e9ebf2)}"
+    },
+    {
+      "name": "Record Card",
+      "kind": "card",
+      "refersTo": "record-card",
+      "description": "A wallet's record on cloth: 2px corners, mono stamp, ETH in pollen ink.",
+      "html": "<article class=\"ds-rec\"><p class=\"ds-rec__stamp\">On the sheet</p><h3 class=\"ds-rec__who\">dewlight.eth</h3><dl class=\"ds-rec__facts\"><div><dt>Rank</dt><dd>No. 4</dd></div><div><dt>Paid</dt><dd class=\"is-eth\">0.0312 ETH</dd></div></dl></article>",
+      "css": ".ds-rec{width:340px;padding:22px;border-radius:2px;background:var(--sheet,#e8eaf2);color:var(--sheet-ink,#15171d);box-shadow:0 30px 80px rgba(0,0,0,.45);font-family:'Bricolage Grotesque Variable','Segoe UI',system-ui,sans-serif}.ds-rec__stamp{margin:0;font:400 13px 'Fragment Mono',ui-monospace,monospace}.ds-rec__who{margin:8px 0 0;font-weight:760;font-size:28px;line-height:1.05;font-stretch:84%;letter-spacing:-.02em}.ds-rec__facts{display:flex;gap:32px;margin:16px 0 0}.ds-rec__facts dt{font-size:12px;color:var(--sheet-mute,#4b5060)}.ds-rec__facts dd{margin:2px 0 0;font:400 17px 'Fragment Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums}.ds-rec__facts .is-eth{color:var(--pollen-ink,#7a4f00)}"
+    },
+    {
+      "name": "Specimen Callout",
+      "kind": "custom",
+      "refersTo": "sheet",
+      "description": "A moth's hairline leader-line callout on the sheet: mono rank, name, balance.",
+      "html": "<div class=\"ds-callout\"><b>No. 2</b><span class=\"ds-callout__name\">Mothra Lisa</span><span class=\"ds-callout__bal\">8,214,000</span></div>",
+      "css": ".ds-callout{position:relative;display:inline-flex;flex-direction:column;gap:1px;padding:16px 16px 16px 40px;background:var(--sheet,#e8eaf2);color:var(--sheet-ink,#15171d);line-height:1.2;font-family:'Fragment Mono',ui-monospace,monospace}.ds-callout::before{content:'';position:absolute;left:12px;top:23px;width:22px;height:1px;background:rgba(21,23,29,.7)}.ds-callout b{font-size:11px;font-weight:400;color:var(--sheet-mute,#4b5060)}.ds-callout__name{font-size:13px;font-weight:680}.ds-callout__bal{font-size:11px;color:var(--sheet-mute,#4b5060);font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Night Log Line",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "One round in the night log: spine dot, mono time, pollen ETH, transaction link.",
+      "html": "<div class=\"ds-log\"><span class=\"ds-log__when\">02:14</span><span class=\"ds-log__what\"><b>Reward</b> to the ten</span><span class=\"ds-log__eth\">0.02 ETH</span><a class=\"ds-log__tx\" href=\"#\">tx 0x9f3a</a></div>",
+      "css": ".ds-log{position:relative;display:grid;grid-template-columns:72px 1fr auto auto;gap:24px;align-items:baseline;padding:16px 16px 16px 26px;background:var(--night,#06080c);color:var(--dim,#9ba2b3);font-family:'Bricolage Grotesque Variable','Segoe UI',system-ui,sans-serif}.ds-log::before{content:'';position:absolute;left:8px;top:22px;width:9px;height:9px;border-radius:50%;background:var(--pollen,#f3c74a)}.ds-log__when,.ds-log__tx{font:400 13px 'Fragment Mono',ui-monospace,monospace;color:var(--dim,#9ba2b3)}.ds-log__what b{color:var(--moon,#e9ebf2);font-weight:650}.ds-log__eth{font:400 15px 'Fragment Mono',ui-monospace,monospace;color:var(--pollen,#f3c74a)}.ds-log__tx:hover{color:var(--moon,#e9ebf2)}.ds-log__tx:focus-visible{outline:2px solid var(--lamp-hi,#a68bff);outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Light Sheet",
+    "overview": "A moth hunter strings a cotton sheet between two posts in a dark field and hangs a mercury lamp over it. Everything on this site happens on or around that sheet. The night is the ground; the lit sheet is the reading surface; rank is literally distance from the lamp. The ten moths resting nearest the light are the paid top ten, and a moth that flies off into the dark does not come back. The interface is the hunter's night log of that sheet: dry, deadpan, exact, and illuminated by a single source.\n\nDensity is calm on the night and dense on the cloth. Night sections carry one large condensed line, a short dim deck and a few measured facts. The sheet carries the work: specimens, hairline leader-line callouts in mono, ring rows of ranks and balances. Light comes from one place, the lamp, and its violet tints nothing that is not the lamp, its light, or the one action that matters (buying). Money keeps its own colour: pollen yellow, only on ETH amounts.\n\nThe world refuses the memecoin template: no mascot-left-headline-right hero, no stat-card grid, no generic table. Moths are flat, drawn specimens viewed from above, never rendered 3D mascots, and every one faces the lamp.",
+    "keyCharacteristics": [
+      "Night ground (#06080c) with a lit cotton sheet (#e8eaf2, woven texture) as the reading surface.",
+      "One light source: lamp violet appears only on the lamp, its glow, and the primary action.",
+      "Pollen yellow is ETH and nothing else; ember is \"flew off\" and nothing else.",
+      "Condensed Bricolage Grotesque for what is said; Fragment Mono for every number, label and callout.",
+      "Pill controls, cloth surfaces with 2px corners.",
+      "Flat SVG moth specimens, heads toward the lamp, with hairline leader-line callouts.",
+      "Motion is the lamp, the moths and the camera: lamp-on, flutter-in, crawl, fly-off, walk-up, flash. All of it off under reduced motion."
+    ],
+    "rules": [
+      {
+        "name": "The One Light Rule",
+        "body": "Violet is the lamp. If an element is not the lamp, its light, or the primary action, it is not violet. Glow exists only as the lamp's radial light; nothing else glows.",
+        "section": "colors"
+      },
+      {
+        "name": "The Pollen Is Money Rule",
+        "body": "Pollen yellow marks an ETH amount and nothing else. On the sheet it becomes Pollen Ink; on the night it stays Pollen.",
+        "section": "colors"
+      },
+      {
+        "name": "The Flew Off Rule",
+        "body": "Ember means a wallet sold and flew off, for good. It is never a generic warning colour.",
+        "section": "colors"
+      },
+      {
+        "name": "The Said And Measured Rule",
+        "body": "Words are Bricolage; numbers, addresses, labels and callouts are Fragment Mono with tabular figures. A number is never set in the grotesque.",
+        "section": "typography"
+      },
+      {
+        "name": "The Condensed Voice Rule",
+        "body": "Large Bricolage is always condensed through the width axis (76-86%) with tight negative tracking; body text stays at normal width.",
+        "section": "typography"
+      },
+      {
+        "name": "The Distance Is Light Rule",
+        "body": "Nearness to the lamp is shown with light: brighter, larger and more saturated near the lamp, dimmer and smaller farther out. Never with badges or medals.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** keep night as the ground and the lit sheet as the reading surface; dense information goes on the cloth.",
+      "**Do** keep violet to the lamp, its light and the one primary action; put the button on `lamp-deep` (#7444f5) with white text for AA.",
+      "**Do** colour every ETH amount Pollen on night and Pollen Ink on the sheet.",
+      "**Do** set every number, address, label and callout in Fragment Mono with tabular figures.",
+      "**Do** draw moths as flat SVG specimens from above with every head facing the lamp.",
+      "**Do** use pills for controls and 2px corners for surfaces.",
+      "**Do** place anything GSAP moves with left/top/margins and let GSAP own the transform.",
+      "**Do** turn all motion off under `prefers-reduced-motion`."
+    ],
+    "donts": [
+      "**Don't** use violet for decoration, section tints, borders or secondary buttons.",
+      "**Don't** use Pollen for anything that is not ETH, or Ember for anything that is not a wallet that flew off.",
+      "**Don't** set numbers in Bricolage or words-as-voice in the mono.",
+      "**Don't** add glows other than the lamp's own light.",
+      "**Don't** use rounded cards (beyond 2px) or square controls.",
+      "**Don't** use the CSS `translate` property on elements GSAP moves.",
+      "**Don't** fall back to the memecoin template: mascot left and headline right, stat-card grids, a plain leaderboard table.",
+      "**Don't** add kickers or eyebrow labels above headings."
+    ]
+  }
+}

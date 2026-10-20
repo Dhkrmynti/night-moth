@@ -1,11 +1,7 @@
 import { createRoot } from "react-dom/client";
-import "@fontsource/fraunces/latin-400.css";
-import "@fontsource/fraunces/latin-400-italic.css";
-import "@fontsource/fraunces/latin-600.css";
-import "@fontsource/fraunces/latin-900.css";
-import "@fontsource/courier-prime/latin-400.css";
-import "@fontsource/courier-prime/latin-700.css";
-import "./styles/tree.css";
+import "@fontsource-variable/bricolage-grotesque/standard.css";
+import "@fontsource/fragment-mono/latin-400.css";
+import "./styles/night.css";
 import "./styles/memex.css";
 import { App } from "./App";
 import { Memex } from "./components/Memex";

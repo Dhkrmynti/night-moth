@@ -1,0 +1,220 @@
+{
+ "title": "Choose the visual world for Night Moth",
+ "question": "The roll assigned The Sighting Bulletin. Keep it, take an alternate, or re-roll.",
+ "options": [
+  {
+   "id": "assigned",
+   "label": "The Sighting Bulletin",
+   "kicker": "THE ROLL",
+   "lineage": "xeroxed moth-hunters' club bulletins and cryptid sighting zines, flash photos taken at 2am",
+   "thesis": "Every night is an issue: the top ten are this week's confirmed sightings at the light, shot with a hard flash and logged deadpan.",
+   "palette": [
+    "#ebe9e3",
+    "#121212",
+    "#6b3cff",
+    "#ff8a1f"
+   ],
+   "materials": [
+    "photocopier toner on grey bond",
+    "on-camera flash photography of moths on black",
+    "typewriter log lines"
+   ],
+   "viewport": "Masthead NIGHT MOTH with issue number; a giant flash photo of No. 1 on the lamp glass as the cover sighting; nine smaller numbered sighting frames; the Reward meter as the lead number; Buy $MOTH in the masthead.",
+   "risk": "Can tip into loud tabloid if the copy shouts; the voice must stay a dry night log.",
+   "raised": [
+    {
+     "from": "ikeda-datamatics",
+     "raise": "One full-frame inversion: the camera flash fires on scroll and the page flips to its negative for a beat."
+    },
+    {
+     "from": "kinetic-sculpture-automata-tensegrity-breathing-column",
+     "raise": "Every sighting carries a leader-line callout with its exact balance and next Reward in ETH."
+    },
+    {
+     "from": "design-annual-s-plate-section",
+     "raise": "Registration crosshairs and a strict hairline grid frame every photo plate."
+    },
+    {
+     "from": "pop-culture-shelf-code-cascade-terminal",
+     "raise": "A sighting sharpens from motion blur only when you focus or hover it."
+    },
+    {
+     "from": "scientific-notation-oscilloscope-signal-bench",
+     "raise": "Escrow, Reward and Treasury read off one measured scale, never three meters."
+    }
+   ]
+  },
+  {
+   "id": "model-pick",
+   "label": "The Light Sheet",
+   "kicker": "IMPECCABLE’S PICK",
+   "lineage": "lepidopterists' UV lamp and white sheet strung up in a dark field",
+   "thesis": "The leaderboard is a glowing sheet in the dark: the closer a moth rests to the lamp, the higher its rank.",
+   "palette": [
+    "#07070a",
+    "#f3f0ff",
+    "#8b5cff",
+    "#a48b6a"
+   ],
+   "materials": [
+    "backlit cotton sheet",
+    "UV lamp glow",
+    "dusty moth wings"
+   ],
+   "viewport": "Black field, a luminous sheet hung on a cord filling the viewport, the lamp at top centre, ten moths resting on the sheet by rank, headline Stay in the light.",
+   "risk": "The most literal reading of the name, and close to the near-black glow look many crypto pages ship."
+  },
+  {
+   "id": "challenger-bazaar",
+   "label": "Moon-shadow Bazaar",
+   "verdict": "competitive",
+   "lineage": "dream-surreal night market where shadows are traded",
+   "thesis": "A moonlit lane where each of the ten moths is a stall casting a shadow sized by its holding.",
+   "palette": [
+    "#0d1324",
+    "#2a2f3d",
+    "#d9a441",
+    "#eef2ff"
+   ],
+   "materials": [
+    "stall canvas",
+    "layered soft blacks",
+    "chalked price tickets"
+   ],
+   "viewport": "One lane of stalls under a moon; No. 1's stall nearest the lamp with the longest moth shadow; tickets show balance and next Reward.",
+   "case": "Holds audience identification (night, light, shadow); loses on clarity because stalls blur the plain ranking.",
+   "risk": "Whimsy can bury the rank and the buy action.",
+   "hero": "https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-moon-shadow-bazaar-hero.webp",
+   "board": "https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-moon-shadow-bazaar.webp"
+  },
+  {
+   "id": "challenger-annual",
+   "label": "Design Annual Plates",
+   "verdict": "declined",
+   "lineage": "design annual plate section",
+   "thesis": "Holders as printed plates in an annual.",
+   "palette": [
+    "#f5f4f6",
+    "#16181a",
+    "#dcddf3"
+   ],
+   "materials": [
+    "uncoated stock",
+    "registration marks"
+   ],
+   "viewport": "Plate grid of ten holders.",
+   "case": "Fuses poorly: holders do not see themselves in a design annual.",
+   "kept": "Registration crosshairs and a strict hairline grid.",
+   "risk": "Cold and gallery-like for a memecoin.",
+   "hero": "https://impeccable.style/worlds/cards/design-annual-s-plate-section-hero.webp"
+  },
+  {
+   "id": "challenger-ikeda",
+   "label": "Datamatics Field",
+   "verdict": "declined",
+   "lineage": "black and white data-sublime installations",
+   "thesis": "Balances as barcode fields.",
+   "palette": [
+    "#000000",
+    "#ffffff"
+   ],
+   "materials": [
+    "hairline bars",
+    "monospace numerics"
+   ],
+   "viewport": "A barcode wall of holders.",
+   "case": "Loses both axes: no moth, no night ritual.",
+   "kept": "One full-frame inversion moment.",
+   "risk": "Unreadable for a quick rank check.",
+   "hero": "https://impeccable.style/worlds/cards/ikeda-datamatics-hero.webp"
+  },
+  {
+   "id": "challenger-tensegrity",
+   "label": "Tensegrity Column",
+   "verdict": "declined",
+   "lineage": "kinetic sculpture",
+   "thesis": "Holders as rods under tension.",
+   "palette": [
+    "#1a1a1a",
+    "#d8d6d0",
+    "#c8322a"
+   ],
+   "materials": [
+    "carbon rods",
+    "red cord"
+   ],
+   "viewport": "A column of forces.",
+   "case": "Loses both axes: engineering metaphor, no night or moth.",
+   "kept": "Every element pinned to a measured value on a leader line.",
+   "risk": "Abstract.",
+   "hero": "https://impeccable.style/worlds/cards/kinetic-sculpture-automata-tensegrity-breathing-column-hero.webp"
+  },
+  {
+   "id": "challenger-glyphrain",
+   "label": "Glyph-rain Terminal",
+   "verdict": "declined",
+   "lineage": "cyberpunk code cascade",
+   "thesis": "Holders surfacing from falling glyphs.",
+   "palette": [
+    "#000000",
+    "#9dffb0"
+   ],
+   "materials": [
+    "phosphor glyphs"
+   ],
+   "viewport": "Rain of glyphs with ten panes.",
+   "case": "Loses both axes: the green-on-black crypto default, nothing of moths.",
+   "kept": "Things sharpen into legibility only where you focus.",
+   "risk": "Generic crypto.",
+   "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-code-cascade-terminal-hero.webp"
+  },
+  {
+   "id": "challenger-scope",
+   "label": "Oscilloscope Bench",
+   "verdict": "declined",
+   "lineage": "CRT signal bench",
+   "thesis": "Fees as a waveform.",
+   "palette": [
+    "#0a0d0a",
+    "#7dff7a",
+    "#ffb000"
+   ],
+   "materials": [
+    "phosphor trace",
+    "graticule"
+   ],
+   "viewport": "One graticule screen.",
+   "case": "Loses both axes: an instrument costume.",
+   "kept": "Everything read off one measured scale.",
+   "risk": "Tool costume.",
+   "hero": "https://impeccable.style/worlds/cards/scientific-notation-oscilloscope-signal-bench-hero.webp"
+  }
+ ],
+ "reroll": {
+  "registers": [
+   "safer",
+   "bolder"
+  ]
+ },
+ "buildPath": {
+  "value": "code",
+  "toggle": false
+ },
+ "canon": true,
+ "canonCard": {
+  "label": "The category standard",
+  "thesis": "A clean memecoin landing page: hero with ticker, buy button, leaderboard table, tokenomics cards.",
+  "palette": [
+   "#0b0b0f",
+   "#ffffff",
+   "#a78bfa"
+  ],
+  "materials": [
+   "clean grid",
+   "mascot illustration"
+  ],
+  "viewport": "Mascot left, headline and buy button right, stats row under it.",
+  "risk": "Indistinguishable from every other launchpad token by design."
+ },
+ "steer": true
+}

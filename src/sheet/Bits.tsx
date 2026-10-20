@@ -4,8 +4,8 @@ import { ArrowUpRight, Check, Copy, SealCheck, Wallet, XLogo } from "@phosphor-i
 import { DEMO, demoPond, ponsUrl, short, xUrl, type Status, type XProfile } from "../lib/api";
 import { connectWallet, hasWallet, pretendAccount, useAccount } from "../lib/wallet";
 import { TICKER } from "../lib/brand";
-import { Portrait, slothOf } from "./Sloth";
-import { openTag } from "./Card";
+import { Portrait, mothOf } from "./Moth";
+import { openRecord } from "./Record";
 
 export function useMedia(query: string) {
   const [match, setMatch] = useState(() => window.matchMedia(query).matches);
@@ -67,13 +67,13 @@ export function CaCopy({ status, compact = false }: { status: Status | null; com
 
 /**
  * How a holder is pictured: a linked X account shows its own picture; everyone else gets their
- * sloth. The X picture falls back to the sloth if X ever stops serving it.
+ * moth. The X picture falls back to the moth if X ever stops serving it.
  */
 export function Face({ addr, pp, x, size, className = "" }: { addr: string; pp?: number[] | null; x?: XProfile | null; size: number; className?: string }) {
   const [broken, setBroken] = useState(false);
   if (x?.avatar && !broken)
     return <img className={`xface ${className}`} src={x.avatar} width={size} height={size} alt="" referrerPolicy="no-referrer" onError={() => setBroken(true)} />;
-  return <Portrait traits={slothOf(addr, pp)} size={size} className={className} />;
+  return <Portrait traits={mothOf(addr, pp)} size={size} className={className} />;
 }
 
 const BADGE: Record<string, string> = { blue: "Verified on X", business: "Verified organization on X", government: "Government account on X" };
@@ -94,27 +94,27 @@ export function XLink({ x, className = "" }: { x: XProfile; className?: string }
 }
 
 /**
- * The header's wallet button. Connecting opens the holder's own tag, already unlocked for a
- * name, sloth or X link. It never asks for a transaction.
+ * The header's wallet button. Connecting opens the holder's own record, already unlocked for a
+ * name, moth or X link. It never asks for a transaction.
  */
 export function ConnectButton({ className = "" }: { className?: string }) {
   const account = useAccount();
   const [busy, setBusy] = useState(false);
 
   const press = async () => {
-    if (account) return openTag(account);
-    // Illustration edition: a real wallet only shares its address; without one, borrow a card.
+    if (account) return openRecord(account);
+    // Illustration edition: a real wallet only shares its address; without one, borrow a record.
     if (DEMO && !hasWallet()) {
-      // a card with no X link yet, so "Sign & connect X" is right there to try
+      // a record with no X link yet, so "Sign & connect X" is right there to try
       const rows = demoPond().rows;
       const a = (rows.find((r) => r.inTop && !r.x && !r.nickname) ?? rows[3]).addr;
       pretendAccount(a);
-      return openTag(a);
+      return openRecord(a);
     }
     if (!hasWallet()) return window.dispatchEvent(new Event("rbank:nowallet"));
     try {
       setBusy(true);
-      openTag(await connectWallet());
+      openRecord(await connectWallet());
     } catch {
       /* closed the popup: nothing to do */
     } finally {
@@ -123,8 +123,8 @@ export function ConnectButton({ className = "" }: { className?: string }) {
   };
 
   return (
-    <button type="button" className={`connect ${account ? "is-on" : ""} ${className}`} onClick={press} disabled={busy} aria-label={account ? `Connected as ${account}. Open my card` : "Connect wallet"}>
-      {account ? <span className="connect__dot" aria-hidden="true" /> : <Wallet weight="bold" aria-hidden="true" />}
+    <button type="button" className={`connect ${account ? "is-on" : ""} ${className}`} onClick={press} disabled={busy} aria-label={account ? `Connected as ${account}. Open my record` : "Connect wallet"}>
+      {account ? <span className="connect__on" aria-hidden="true" /> : <Wallet weight="bold" aria-hidden="true" />}
       <span className="connect__label num">{busy ? "Connecting" : account ? short(account) : "Connect"}</span>
     </button>
   );

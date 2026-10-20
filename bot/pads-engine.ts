@@ -1,13 +1,13 @@
 /**
- * Hang On ($HANG) engine · Robinhood Chain (4663) · Pons Family v2
+ * Night Moth ($MOTH) engine · Robinhood Chain (4663) · Pons Family v2
  *
- * 1. Indexer: follows every $HANG Transfer, keeps balances and first-buy time, and marks a
- *    wallet "out" forever once it sends $HANG to the curve / a DEX contract.
+ * 1. Indexer: follows every $MOTH Transfer, keeps balances and first-buy time, and marks a
+ *    wallet "out" forever once it sends $MOTH to the curve / a DEX contract.
  * 2. The cycle. Each time the Pons fee escrow reaches the step's size, the engine claims it
  *    and spends all of it on that step, then moves to the next:
- *      feeding  (0.02 ETH)  → ETH straight to the 10 biggest holders on the branches, split by tier and balance
+ *      feeding  (0.02 ETH)  → ETH straight to the 10 biggest holders on the sheet, split by tier and balance
  *      keeper   (0.025 ETH) → the treasury
- *    then back to feeding. There is no buyback and no burn: the engine never buys or destroys $HANG.
+ *    then back to feeding. There is no buyback and no burn: the engine never buys or destroys $MOTH.
  * Every transaction hash is saved before it is awaited, so a restart checks the chain and
  * resumes the round instead of sending twice.
  */
@@ -817,7 +817,7 @@ const server = http.createServer((req, res) => {
       const addr = lc(d.addr);
       const bad = spendNonce(addr, d.nonce, d.signature, (n) => xMessage(addr, "link", n));
       if (bad) return send(res, 400, { success: false, error: bad });
-      if (!(big(state.holders[addr]?.balance || "0") > 0n)) return send(res, 400, { success: false, error: "Only wallets holding $HANG can link X." });
+      if (!(big(state.holders[addr]?.balance || "0") > 0n)) return send(res, 400, { success: false, error: "Only wallets holding $MOTH can link X." });
       try {
         return send(res, 200, { success: true, data: { url: startLink(addr) } });
       } catch (e: any) {
@@ -944,5 +944,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(config.port, "127.0.0.1", () => {
-  log("info", `$HANG engine API on 127.0.0.1:${config.port} · ${isAddr(config.tokenAddress) ? `token ${config.tokenAddress}` : "STANDBY (set the token in /lotnok)"}`);
+  log("info", `$MOTH engine API on 127.0.0.1:${config.port} · ${isAddr(config.tokenAddress) ? `token ${config.tokenAddress}` : "STANDBY (set the token in /lotnok)"}`);
 });

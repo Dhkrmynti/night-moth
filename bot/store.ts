@@ -1,5 +1,5 @@
 /**
- * Persistent config + state for the $HANG engine.
+ * Persistent config + state for the $MOTH engine.
  * bot-config.json holds operator settings (incl. the private key, never served by the API).
  * bot-state.json holds the indexer, holder book, rounds and totals.
  */
@@ -33,9 +33,9 @@ export interface Config {
   tokenAddress: string;
   curveAddress: string;
   treasuryAddress: string;
-  /** Extra addresses that count as "selling" when $HANG is sent to them (DEX pool / PoolManager). */
+  /** Extra addresses that count as "selling" when $MOTH is sent to them (DEX pool / PoolManager). */
   sellSinks: string[];
-  /** Any transfer of $HANG into a contract counts as a sell (except excluded addresses). */
+  /** Any transfer of $MOTH into a contract counts as a sell (except excluded addresses). */
   contractsAreSells: boolean;
   /** Escrow size (ETH) that triggers each step of the cycle: feeding → keeper → feeding … */
   feedingETH: string;
@@ -46,7 +46,7 @@ export interface Config {
   feedingTiers: { upTo: number; pct: number }[];
   /** Minimum balance (whole tokens) to be fed. */
   minBalance: string;
-  /** A wallet's first $HANG must be at least this old to be fed (stops last-second snipes). */
+  /** A wallet's first $MOTH must be at least this old to be fed (stops last-second snipes). */
   minHoldHours: number;
   pollIntervalSeconds: number;
   port: number;
@@ -107,7 +107,7 @@ export interface Holder {
   received: string;
   /** Tx of the latest incoming transfer (spots routers that pass tokens straight through). */
   lastInTx?: string;
-  /** A contract that only relays $HANG within one transaction (router, aggregator). Never a sitter. */
+  /** A contract that only relays $MOTH within one transaction (router, aggregator). Never a sitter. */
   relay?: boolean;
 }
 

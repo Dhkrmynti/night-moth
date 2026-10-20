@@ -5,28 +5,28 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { demoPond, demoStatus, usePoll, type Pond, type Status } from "./lib/api";
 import { prefersReducedMotion } from "./lib/motion";
 import { restoreWallet } from "./lib/wallet";
-import { Header, Vine } from "./tree/Header";
-import { Canopy } from "./tree/Canopy";
-import { Register } from "./tree/Register";
-import { Trunk } from "./tree/Trunk";
-import { Rules } from "./tree/Rules";
-import { Tag } from "./tree/Card";
-import { Rings } from "./tree/Rings";
-import { Floor } from "./tree/Floor";
+import { Header } from "./sheet/Header";
+import { Hero } from "./sheet/Hero";
+import { Tally } from "./sheet/Tally";
+import { Lamp } from "./sheet/Lamp";
+import { Flash, Rules } from "./sheet/Rules";
+import { Record } from "./sheet/Record";
+import { Log } from "./sheet/Log";
+import { Close } from "./sheet/Close";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export function App() {
   const { data: status, error } = usePoll<Status>("/api/status", 4000, demoStatus);
   const live = !!status?.tokenAddress;
-  // the branches are live: a new buyer is in the register within a few seconds
+  // the sheet is live: a new buyer is in the tally within a few seconds
   const { data: pond } = usePoll<Pond>(live ? "/api/pond?limit=50" : null, 3000, demoPond);
 
   // A wallet that already trusts this site shows as connected without a popup.
   useEffect(restoreWallet, []);
 
   // The scrubbed scenes measure where they start once; when fonts, X pictures or the live
-  // register change the height above them, measure again so nothing starts in the wrong place.
+  // tally change the height above them, measure again so nothing starts in the wrong place.
   useEffect(() => {
     ScrollTrigger.config({ ignoreMobileResize: true });
     let t = 0;
@@ -36,7 +36,7 @@ export function App() {
     };
     document.fonts?.ready.then(again);
     window.addEventListener("load", again);
-    const watched = ["branches", "trunk", "rules", "card", "rings"].map((id) => document.getElementById(id)).filter(Boolean) as HTMLElement[];
+    const watched = ["sheet", "lamp", "rules", "card", "log"].map((id) => document.getElementById(id)).filter(Boolean) as HTMLElement[];
     const heights = new Map<Element, number>();
     const ro = new ResizeObserver((entries) => {
       for (const e of entries) {
@@ -81,19 +81,19 @@ export function App() {
   }, []);
 
   return (
-    <div className="tree">
+    <div className="night">
       <Header status={status} />
-      <Vine />
-      {/* the canopy stays put while you start down; the leaves close over it and you are among the branches */}
-      <Canopy status={status} pond={pond} offline={!!error && !status} />
+      {/* the sheet stays put while you walk up to it; it grows until it is the ground of the tally */}
+      <Hero status={status} pond={pond} offline={!!error && !status} />
       <main>
-        <Register status={status} pond={pond} />
-        <Trunk status={status} />
+        <Tally status={status} pond={pond} />
+        <Lamp status={status} />
         <Rules status={status} />
-        <Tag live={live} />
-        <Rings status={status} />
-        <Floor status={status} />
+        <Record live={live} />
+        <Log status={status} />
+        <Close status={status} />
       </main>
+      <Flash />
     </div>
   );
 }
